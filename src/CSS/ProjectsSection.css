@@ -1,0 +1,44 @@
+.profileSection {
+padding: 1vh 10vb;
+display: flex;
+flex-direction: column;
+}
+
+.profileHead {
+    display: flex;
+    justify-content: center;
+}
+.profilePara {
+
+}
+.profileHead2 {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 11vb;
+    height: 10vh;
+    overflow: visible;
+}
+.imgdiv {
+    display: flex;
+    justify-content: center;
+    gap: 10vb;
+}
+.cta2 {
+    border: 1px solid #7510F6;
+    padding : 1vh 3vb;
+    cursor: pointer;
+    background-color: #7510F6;
+    border-radius: 10px;
+    align-self: center;
+    color: white;
+    margin-top: 4vh;
+}
+.cta2:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 250ms;
+    border-color: black;
+   
+}

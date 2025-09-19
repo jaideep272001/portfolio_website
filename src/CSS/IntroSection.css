@@ -1,0 +1,69 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.introDiv {
+    margin-top: 40vh;
+    padding-top: 5vh;
+    padding-left: 10vb;
+    padding-right: 10vb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7510F6;
+    gap : -5px;
+    padding-bottom: 40vh;
+}
+
+.introDiv h1 {
+    color: white;
+}
+
+.introDiv p {
+    color: white;
+    text-align: center;
+}
+.intro2div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10vb;
+    margin-right: 10vb;
+    margin-top: -35vh;
+    background-color: white;
+    padding-right: 5vb;
+    padding-left: 5vb;
+    border-radius: 10px;
+    gap: 5vb;
+}
+.intro2div p {
+    text-align: justify;
+}
+.cta {
+    border: 1px solid white;
+    padding : 1vh 3vb;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cta:hover {
+    background-color: white;
+    color: #7510F6;
+    transition-duration: 250ms;
+}
+.experienceSegment {
+    display: flex;
+    margin-top: -3vb;
+    justify-content: space-between;
+}
+.designation {
+    font-size: smaller;
+    margin-top: -2.5vb;
+}
+.experienceSegment-2 {
+    display: flex;
+    margin-top: -3vb;
+    justify-content: space-between;
+    padding-top: 4vh;
+}

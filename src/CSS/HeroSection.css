@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
-    
+    scroll-behavior: smooth;
 }
 
 .herodiv {
@@ -16,11 +16,17 @@ body {
     background-blend-mode: lighten;
 }
 
+.herodiv a {
+    display: flex;
+    align-self: center;
+    scroll-behavior: smooth;
+}
+
 .herosection {
     display: flex;
     flex-direction: column;
 }
-.herosection img {
+.avatarImage {
     width: 30vb;
     height: 30vh;
     align-self: center;
@@ -28,7 +34,29 @@ body {
 }
 .herosection h2 {
     align-self: center;
+    font-size: xx-large;
 }
 .herosection p {
     align-self: center;
+}
+.arrowdown {
+    width: 5vb;
+    height: 5vh;
+    align-self: center;
+    justify-content: baseline;
+    margin-top: 60px;
+    padding-top: 40px;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    top: 0; 
+    animation-timing-function: ease-out; 
+  }
+  50% {
+    top: 40px;
+    animation-timing-function: ease-in; 
+  }
 }
