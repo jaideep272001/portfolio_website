@@ -3,7 +3,7 @@ import "../CSS/ContactUsPage.css";
 
 const ContactUs = () => {
   return (
-    <div className="contactSection">
+    <div className="contactSection" id ="contactSection">
       <h1 className="contactTitle">Contact Me</h1>
       <div className="contactGrid">
         {/* Left Column - Contact Form */}
@@ -29,15 +29,15 @@ const ContactUs = () => {
         <div className="contactInfo">
           <h2>Get in Touch</h2>
           <p><strong>Address:</strong> Jaipur, Rajasthan, India</p>
-          <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-          <p><strong>Email:</strong> your.email@example.com</p>
-          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a></p>
+          <p><strong>Phone:</strong> +91 - 79766 78211</p>
+          <p><strong>Email:</strong> jaideepdaswani0838@gmail.com</p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jaideepdaswani" target="_blank" rel="noreferrer">linkedin.com/in/jaideepdaswani</a></p>
 
           <h2>Location</h2>
           <div className="mapContainer">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.2362342076955!2d75.79887811501783!3d26.912434583163364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5dddb7b4d5f%3A0x3c9de3b3d53f1c50!2sJaipur%2C%20Rajasthan%2C%20India!5e0!3m2!1sen!2sin!4v1695200000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1485402803964!2d75.75378837569845!3d26.8670213766744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db501bec8994d%3A0xf8f809614281f210!2s45%2C%2055%2C%20Kiran%20Path%2C%20Mansarovar%20Sector%204%2C%20Mansarovar%2C%20Jaipur%2C%20Rajasthan%20302020!5e0!3m2!1sen!2sin!4v1758386036769!5m2!1sen!2sin"
               width="100%"
               height="250"
               style={{ border: 0 }}
@@ -52,3 +52,4 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+

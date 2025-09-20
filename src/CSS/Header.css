@@ -21,14 +21,11 @@
 }
 
 /* ===== Left side (Logo or Image Space) ===== */
-.header-menu ul:first-child li {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Playfair Display", serif; /* classy font */
-  color: #0e3094; /* deep blue */
+.header-menu img {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  list-style: none;
+  height: 3rem;
+  width: 3rem;
 }
 
 .header-menu ul:first-child li:hover {

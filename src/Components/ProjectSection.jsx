@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/ProjectsSection.css";
-
+import { useNavigate } from "react-router-dom";
+import UnderDevelopment from "../Components/UnderDevelopment"
 import { FaCheckCircle } from "react-icons/fa";
 
 const projects = [
@@ -35,6 +36,7 @@ const projects = [
 ];
 
 const ProjectsShowcase = () => {
+  const navigate = useNavigate()
   return (
     <div className="projectsSection">
       <h1 className="projectsTitle">Featured Projects</h1>

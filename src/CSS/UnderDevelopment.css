@@ -1,0 +1,71 @@
+.underDevSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f8;
+  text-align: center;
+  padding: 2rem;
+}
+
+.underDevContent {
+  max-width: 500px;
+}
+
+.constructionImg {
+  width: 150px;
+  margin-bottom: 2rem;
+  animation: float 2s ease-in-out infinite;
+}
+
+.underDevContent h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #7510f6;
+  margin-bottom: 1rem;
+}
+
+.underDevContent p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Animated loader */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #7510f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+/* Floating animation for image */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .constructionImg {
+    width: 120px;
+  }
+
+  .underDevContent h1 {
+    font-size: 2rem;
+  }
+
+  .underDevContent p {
+    font-size: 1rem;
+  }
+}
