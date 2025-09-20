@@ -1,56 +1,105 @@
-/* App.css */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+/* ===== Global resets ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .header-menu {
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  padding-right: 50px;
-  color: white;
+  padding: 0 5%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.header-menu .logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.header-menu ul {
+/* ===== Left side (Logo or Image Space) ===== */
+.header-menu ul:first-child li {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif; /* classy font */
+  color: #0e3094; /* deep blue */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   list-style: none;
+}
+
+.header-menu ul:first-child li:hover {
+  color: #7510f6;
+  transform: translateY(-2px);
+}
+
+/* ===== Right side buttons ===== */
+.header-menu ul:last-child {
   display: flex;
-  gap: 20px;
+  align-items: center;   /* ✅ ensures vertical alignment */
+  gap: 1.5rem;
+  list-style: none;
 }
 
-.header-menu li {
-  cursor: pointer;
-  color: black;
-  
-}
-
-.mentorshipBtn:hover {
-    color: #7510F6;
-    transition-duration: 150ms;
-}
+/* Mentorship link */
 .mentorshipBtn {
-    border: 2px solid white;
-    padding: 10px 15px;
+  color: #0e3094;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;   /* ✅ matches button height */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
 }
 
+/* Underline animation */
+.mentorshipBtn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #7510f6;
+  left: 0;
+  bottom: 4px;
+  transition: width 0.3s ease;
+}
+
+.mentorshipBtn:hover::after {
+  width: 100%;
+}
+
+/* Hello button (CTA) */
 .helloBtn {
-  border: 2px solid #7510F6;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: #7510F6;       
-  background: transparent;
-  cursor: pointer;
+  background: #7510f6;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .helloBtn:hover {
-  background: #7510F6;   /* background changes */
-  color: white !important;   /* force text color to white */
+  background: #0e3094;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 48, 148, 0.3);
+}
+
+/* ===== Responsive (Mobile/Tablet) ===== */
+@media (max-width: 768px) {
+  .header-menu {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 5%;
+  }
+
+  .header-menu ul:last-child {
+    margin-top: 0.8rem;
+    gap: 1rem;
+  }
 }

@@ -1,69 +1,147 @@
-* {
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
+/* ===== Intro Section (Top Greeting) ===== */
 .introDiv {
-    margin-top: 40vh;
-    padding-top: 5vh;
-    padding-left: 10vb;
-    padding-right: 10vb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #7510F6;
-    gap : -5px;
-    padding-bottom: 40vh;
+  padding: 6rem 10%;
+  text-align: center;
+  background: #faf9f6;
+  animation: fadeIn 1.2s ease;
 }
 
 .introDiv h1 {
-    color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0e3094;
+  margin-bottom: 1.5rem;
 }
 
-.introDiv p {
-    color: white;
-    text-align: center;
+.textPara {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
 }
-.intro2div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10vb;
-    margin-right: 10vb;
-    margin-top: -35vh;
-    background-color: white;
-    padding-right: 5vb;
-    padding-left: 5vb;
-    border-radius: 10px;
-    gap: 5vb;
-}
-.intro2div p {
-    text-align: justify;
-}
+
 .cta {
-    border: 1px solid white;
-    padding : 1vh 3vb;
-    cursor: pointer;
-    border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7510f6;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .cta:hover {
-    background-color: white;
-    color: #7510F6;
-    transition-duration: 250ms;
+  color: #0e3094;
 }
-.experienceSegment {
-    display: flex;
-    margin-top: -3vb;
-    justify-content: space-between;
+
+/* ===== Second Section (About Me + Experience) ===== */
+.intro2div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 6rem 10%;
+  background: linear-gradient(135deg, #ffffff, #f3f4f8);
+  animation: slideUp 1.4s ease;
 }
-.designation {
-    font-size: smaller;
-    margin-top: -2.5vb;
+
+/* Section Headings */
+.intro2div h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0e3094;
+  margin-bottom: 1.5rem;
 }
+
+/* Paragraphs */
+.intro2div p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Professional Experience Styling */
+.experienceSegment,
 .experienceSegment-2 {
-    display: flex;
-    margin-top: -3vb;
-    justify-content: space-between;
-    padding-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #ddd;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+}
+
+.experienceSegment h4,
+.experienceSegment-2 h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0e3094;
+}
+
+.designation {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7510f6;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* Experience Bullet Points */
+.intro2div ul {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.intro2div ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .intro2div {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 8%;
+  }
+
+  .introDiv {
+    padding: 4rem 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .introDiv h1 {
+    font-size: 2rem;
+  }
+
+  .intro2div h1 {
+    font-size: 1.6rem;
+  }
+
+  .textPara {
+    font-size: 1rem;
+  }
 }

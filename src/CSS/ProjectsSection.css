@@ -1,44 +1,92 @@
-.profileSection {
-padding: 1vh 10vb;
-display: flex;
-flex-direction: column;
+.proficiencySection {
+  background: #faf9f6;
+  padding: 6rem 5%;
+  text-align: center;
 }
 
-.profileHead {
-    display: flex;
-    justify-content: center;
+.sectionTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #0e3094;
+  margin-bottom: 1rem;
 }
-.profilePara {
 
+.sectionDesc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
 }
-.profileHead2 {
-    display: flex;
-    justify-content: center;
+
+/* Category Block */
+.categoryBlock {
+  margin: 3rem 0;
 }
-img {
-    width: 11vb;
-    height: 10vh;
-    overflow: visible;
+
+.categoryTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #7510f6;
+  margin-bottom: 1.5rem;
 }
-.imgdiv {
-    display: flex;
-    justify-content: center;
-    gap: 10vb;
+
+/* Horizontal scroll row */
+.iconRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
 }
-.cta2 {
-    border: 1px solid #7510F6;
-    padding : 1vh 3vb;
-    cursor: pointer;
-    background-color: #7510F6;
-    border-radius: 10px;
-    align-self: center;
-    color: white;
-    margin-top: 4vh;
+
+.iconRow::-webkit-scrollbar {
+  height: 8px;
 }
-.cta2:hover {
-    background-color: white;
-    color: black;
-    transition-duration: 250ms;
-    border-color: black;
-   
+
+.iconRow::-webkit-scrollbar-thumb {
+  background: rgba(117, 16, 246, 0.4);
+  border-radius: 4px;
+}
+
+.iconRow::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Icon Card */
+.iconCard {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconCard img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.iconCard:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 12px 32px rgba(117, 16, 246, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iconCard {
+    min-width: 80px;
+    padding: 16px;
+  }
+  .iconCard img {
+    max-width: 60px;
+    max-height: 60px;
+  }
 }
