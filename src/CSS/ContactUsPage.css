@@ -1,0 +1,112 @@
+.contactSection {
+  padding: 6rem 5%;
+  background: #f9f9fb;
+}
+
+.contactTitle {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #0e3094;
+  margin-bottom: 3rem;
+}
+
+/* Grid Layout */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* Left Column - Form */
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0e3094;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #7510f6;
+  box-shadow: 0 0 8px rgba(117, 16, 246, 0.2);
+}
+
+.submitBtn {
+  background: #0e3094;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #7510f6;
+  transform: translateY(-3px);
+}
+
+/* Right Column - Contact Info */
+.contactInfo h2 {
+  font-family: "Playfair Display", serif;
+  color: #7510f6;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contactInfo p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.contactInfo a {
+  color: #0e3094;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+  color: #7510f6;
+}
+
+/* Map */
+.mapContainer {
+  margin-top: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mapContainer iframe {
+    height: 200px;
+  }
+}

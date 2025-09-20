@@ -1,0 +1,92 @@
+.proficiencySection {
+  background: #faf9f6;
+  padding: 6rem 5%;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #0e3094;
+  margin-bottom: 1rem;
+}
+
+.sectionDesc {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+/* Category Block */
+.categoryBlock {
+  margin: 3rem 0;
+}
+
+.categoryTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #7510f6;
+  margin-bottom: 1.5rem;
+}
+
+/* Horizontal scroll row */
+.iconRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.iconRow::-webkit-scrollbar {
+  height: 8px;
+}
+
+.iconRow::-webkit-scrollbar-thumb {
+  background: rgba(117, 16, 246, 0.4);
+  border-radius: 4px;
+}
+
+.iconRow::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Icon Card */
+.iconCard {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconCard img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.iconCard:hover {
+  transform: translateY(-8px) scale(1.1);
+  box-shadow: 0 12px 32px rgba(117, 16, 246, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iconCard {
+    min-width: 80px;
+    padding: 16px;
+  }
+  .iconCard img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+}

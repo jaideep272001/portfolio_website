@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/ProjectsSection.css";
+import "../CSS/SkillsSection.css";
 
 // Languages
 import cPlusPlus from "../assets/Languages/c++_image.png";

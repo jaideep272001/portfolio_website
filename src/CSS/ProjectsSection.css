@@ -1,17 +1,17 @@
-.proficiencySection {
-  background: #faf9f6;
+.projectsSection {
+  background: #f3f4f8;
   padding: 6rem 5%;
   text-align: center;
 }
 
-.sectionTitle {
+.projectsTitle {
   font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   color: #0e3094;
   margin-bottom: 1rem;
 }
 
-.sectionDesc {
+.projectsDesc {
   font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: #555;
@@ -20,73 +20,96 @@
   line-height: 1.6;
 }
 
-/* Category Block */
-.categoryBlock {
-  margin: 3rem 0;
+/* Grid Layout - 2 in line */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  animation: fadeInUp 1s ease forwards;
 }
 
-.categoryTitle {
-  font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  color: #7510f6;
-  margin-bottom: 1.5rem;
-}
-
-/* Horizontal scroll row */
-.iconRow {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 1.5rem;
-  padding-bottom: 1rem;
-  scroll-behavior: smooth;
-}
-
-.iconRow::-webkit-scrollbar {
-  height: 8px;
-}
-
-.iconRow::-webkit-scrollbar-thumb {
-  background: rgba(117, 16, 246, 0.4);
-  border-radius: 4px;
-}
-
-.iconRow::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-/* Icon Card */
-.iconCard {
-  flex: 0 0 auto;
+/* Individual Project Card */
+.projectCard {
   background: #fff;
   border-radius: 20px;
-  padding: 20px;
-  min-width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.iconCard img {
-  max-width: 70px;
-  max-height: 70px;
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 36px rgba(117, 16, 246, 0.2);
 }
 
-.iconCard:hover {
-  transform: translateY(-8px) scale(1.1);
-  box-shadow: 0 12px 32px rgba(117, 16, 246, 0.2);
+.projectContent h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #7510f6;
+  margin-bottom: 0.8rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .iconCard {
-    min-width: 80px;
-    padding: 16px;
+.projectContent p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Pointers / Features */
+.pointers {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.pointers li {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.pointerIcon {
+  color: #7510f6;
+  margin-right: 8px;
+}
+
+/* Button */
+.projectBtn {
+  display: inline-block;
+  background: #0e3094;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.projectBtn:hover {
+  background: #7510f6;
+  transform: translateY(-3px);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  .iconCard img {
-    max-width: 60px;
-    max-height: 60px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
   }
 }
