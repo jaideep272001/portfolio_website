@@ -28,9 +28,9 @@ const ContactUs = () => {
         {/* Right Column - Contact Info */}
         <div className="contactInfo">
           <h2>Get in Touch</h2>
-          <p><strong>Address:</strong> Jaipur, Rajasthan, India</p>
-          <p><strong>Phone:</strong> +91 - 79766 78211</p>
-          <p><strong>Email:</strong> jaideepdaswani0838@gmail.com</p>
+          <p><strong>Address:</strong><a target="_blank" href="https://maps.app.goo.gl/jeUh3iokXcAai8Fs9"> 45/55, Kiran Path, Mansarovar, Jaipur, RJ, IN - 302020</a></p>
+          <p><strong>Phone:</strong><a href="tel:+917976678211"> +91 - 79766 78211</a></p>
+          <p><strong>Email:</strong><a href="mailto:jaideepdaswani0838@gmail.com"> jaideepdaswani0838@gmail.com</a></p>
           <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jaideepdaswani" target="_blank" rel="noreferrer">linkedin.com/in/jaideepdaswani</a></p>
 
           <h2>Location</h2>
@@ -53,3 +53,4 @@ const ContactUs = () => {
 
 export default ContactUs;
 
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1485402803964!2d75.75378837569845!3d26.8670213766744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db501bec8994d%3A0xf8f809614281f210!2s45%2C%2055%2C%20Kiran%20Path%2C%20Mansarovar%20Sector%204%2C%20Mansarovar%2C%20Jaipur%2C%20Rajasthan%20302020!5e0!3m2!1sen!2sin!4v1758386036769!5m2!1sen!2sin"

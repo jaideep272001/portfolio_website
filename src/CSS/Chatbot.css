@@ -38,6 +38,8 @@
   background: #7510f6;
   color: white;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   font-weight: bold;
 }
@@ -85,6 +87,9 @@
   border: none;
   color: white;
   padding: 10px 15px;
+  cursor: pointer;
+}
+.x-span{
   cursor: pointer;
 }
 

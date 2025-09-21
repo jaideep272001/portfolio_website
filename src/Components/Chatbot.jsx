@@ -37,7 +37,10 @@ const Chatbot = () => {
 
       {isOpen && (
         <div className="chatbot-window">
-          <div className="chatbot-header">Say Hello to Elara</div>
+          <div className="chatbot-header">
+            <span>Say Hello to Elara</span>
+            <span className="x-span" onClick={() => (setIsOpen(false))}>X</span>
+            </div>
           <div className="chatbot-body">
             {messages.map((msg, idx) => (
               <div key={idx} className={`chat-msg ${msg.from}`}>

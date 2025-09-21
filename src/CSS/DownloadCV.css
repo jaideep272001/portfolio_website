@@ -2,7 +2,7 @@
 .cv-download-wrap {
   position: fixed;
   right: 0;                          /* anchored to right edge */
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   z-index: 1200;
   text-decoration: none;
