@@ -8,6 +8,7 @@ import SkillsSection from './Components/SkillsSection'
 import Achievements from './Components/AchievementsSection'
 import Certifications from './Components/CerificatesSection'
 import ContactUs from './Components/ContactUsPage'
+import Chatbot from './Components/Chatbot'
 import './App.css'
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
     <Achievements />
     <Certifications />
     <ContactUs />
+    <Chatbot />
     <Footer />
     </>
   )
