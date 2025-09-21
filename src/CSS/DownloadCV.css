@@ -1,0 +1,104 @@
+/* Wrapper (anchor) */
+.cv-download-wrap {
+  position: fixed;
+  right: 0;                          /* anchored to right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1200;
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The visible button strip */
+.cv-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(180deg, rgba(117,16,246,0.95), rgba(14,48,148,0.95));
+  color: white;
+  padding: 14px 18px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 10px 30px rgba(14,48,148,0.15);
+  transform: translateX(72%); /* hide most of it off-screen */
+  transition: transform 320ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Icon */
+.cv-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  flex-shrink: 0;
+  color: #fff;
+}
+
+/* Main label */
+.cv-text {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.02em;
+}
+
+/* Small tag (optional) */
+.cv-sub{
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  background: rgba(255,255,255,0.08);
+  padding: 6px 8px;
+  border-radius: 8px;
+  color: rgba(255,255,255,0.95);
+  margin-left: 6px;
+}
+
+/* Hover / focus -> slide in fully */
+.cv-download-wrap:hover .cv-btn,
+.cv-download-wrap:focus-within .cv-btn,
+.cv-btn:focus {
+  transform: translateX(0%);
+  box-shadow: 0 18px 40px rgba(14,48,148,0.25);
+}
+
+/* keyboard focus outline */
+.cv-btn:focus {
+  outline: 3px solid rgba(117,16,246,0.18);
+  outline-offset: 3px;
+}
+
+/* Mobile: move to bottom center as a pill (easier to tap) */
+@media (max-width: 768px) {
+  .cv-download-wrap {
+    right: 50%;
+    bottom: 20px;
+    top: auto;
+    transform: translateX(50%);
+  }
+
+  .cv-btn {
+    transform: translateY(120%);    /* hidden mostly by default on mobile */
+    border-radius: 28px;
+    padding: 12px 20px;
+  }
+
+  /* show on hover (or when tapped) */
+  .cv-download-wrap:hover .cv-btn,
+  .cv-download-wrap:focus-within .cv-btn {
+    transform: translateY(0%);
+  }
+}
+
+/* Respect user reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .cv-btn {
+    transition: none;
+  }
+}

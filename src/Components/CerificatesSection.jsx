@@ -22,7 +22,7 @@ const certifications = [
 const Certifications = () => {
   return (
     <div className="certificationsSection">
-      <h1 className="certificationsTitle">C E RT I F I C AT I O N S</h1>
+      <h1 className="certificationsTitle">CERTIFICATIONS</h1>
       <div className="certificationsGrid">
         {certifications.map((cert, idx) => (
           <div key={idx} className="certCard">

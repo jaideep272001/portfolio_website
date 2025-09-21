@@ -32,7 +32,7 @@ const achievements = [
 const Achievements = () => {
   return (
     <div className="achievementsSection">
-      <h1 className="achievementsTitle">A C H I E V E M E N T S</h1>
+      <h1 className="achievementsTitle">ACHIEVEMENTS</h1>
       <div className="achievementsGrid">
         {achievements.map((ach, idx) => (
           <div key={idx} className="achievementCard">

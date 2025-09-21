@@ -9,6 +9,7 @@ import Achievements from './Components/AchievementsSection'
 import Certifications from './Components/CerificatesSection'
 import ContactUs from './Components/ContactUsPage'
 import Chatbot from './Components/Chatbot'
+import DownloadCVButton from './Components/DownloadCV'
 import './App.css'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <Certifications />
     <ContactUs />
     <Chatbot />
+    <DownloadCVButton file='/src/assets/Jaideep_Daswani_Resume_2025.pdf' />
     <Footer />
     </>
   )
