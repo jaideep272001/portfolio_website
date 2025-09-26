@@ -15,6 +15,7 @@ import express from "../assets/Frameworks/express.png";
 import node from "../assets/Frameworks/node.png";
 import react from "../assets/Frameworks/React.png";
 import reactNative from "../assets/Frameworks/react-native.png";
+import tailwind from "../assets/Frameworks/tailwind.png";
 
 // Tools
 import androidStudio from "../assets/Tools/android-studio.png";
@@ -40,7 +41,7 @@ import pi from "../assets/OS/pi.png";
 const ProficiencySection = () => {
   const categories = [
     { title: "Languages", icons: [cPlusPlus, embeddedC, html, css, js, ts, xml] },
-    { title: "Frameworks", icons: [node, express, react, reactNative] },
+    { title: "Frameworks", icons: [tailwind, node, express, react, reactNative] },
     { title: "Tools", icons: [androidStudio, Xcode, git, github, postman, VSCode, docker] },
     { title: "Databases", icons: [mysql, mongoDB] },
     { title: "Operating Systems", icons: [windows, macOS, linux, android, ios, pi] },
